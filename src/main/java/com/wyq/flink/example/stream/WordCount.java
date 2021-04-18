@@ -38,8 +38,8 @@ public class WordCount {
                     Arrays.stream(line.split(" ")).forEach(collector::collect)).returns(Types.STRING)
                 .map(word -> Tuple2.of(word, 1)).returns(Types.TUPLE(Types.STRING, Types.INT))
                 .keyBy(t -> t.f0).sum(1);
-        // result.print();
-        result.writeAsText(output).setParallelism(1);
+        result.print();
+        //result.writeAsText(output).setParallelism(1);
 
         env.execute();
     }
