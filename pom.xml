@@ -15,7 +15,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
         <scala.version>2.12</scala.version>
-        <flink.version>1.12.0</flink.version>
+        <flink.version>1.12.1</flink.version>
     </properties>
 
     <!-- 指定仓库位置，依次为aliyun、apache和cloudera仓库 -->
