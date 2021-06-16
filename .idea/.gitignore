@@ -5,5 +5,5 @@
 /../../../../:\IdeaProject\flink-study\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
-/httpRequests/
-./target
+/httpRequests/git rm -r --cached .
+target
