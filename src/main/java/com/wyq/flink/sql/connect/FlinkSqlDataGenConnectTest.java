@@ -1,4 +1,4 @@
-package com.wyq.flink.sql;
+package com.wyq.flink.sql.connect;
 
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -18,9 +18,9 @@ public class FlinkSqlDataGenConnectTest {
                 .build();
         StreamTableEnvironment tEnv = StreamTableEnvironment.create(env, settings);
         String ddl = "CREATE TABLE Orders (\n" +
-                "    order_number BIGINT,\n" +
-                "    price        DECIMAL(32,2),\n" +
-                "    buyer        ROW<first_name STRING, last_name STRING>,\n" +
+                "    order_number INT,\n" +
+                "    price        DECIMAL(2,2),\n" +
+                "    buyer        VARCHAR(2),\n" +
                 "    order_time   TIMESTAMP(3)\n" +
                 ") WITH (\n" +
                 "  'connector' = 'datagen',\n" +

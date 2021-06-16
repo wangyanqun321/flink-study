@@ -1,4 +1,4 @@
-package com.wyq.flink.sql;
+package com.wyq.flink.sql.connect;
 
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
