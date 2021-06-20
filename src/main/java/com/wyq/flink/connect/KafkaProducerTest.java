@@ -20,7 +20,7 @@ public class KafkaProducerTest {
         properties.setProperty("bootstrap.servers", "localhost:9092");
 
         FlinkKafkaProducer<String> myProducer = new FlinkKafkaProducer<>(
-                "test-topic",                  // 目标 topic
+                "test-topic2",                  // 目标 topic
                 new SimpleStringSchema(),
                 properties                  // producer 配置
                 //FlinkKafkaProducer.Semantic.EXACTLY_ONCE,
