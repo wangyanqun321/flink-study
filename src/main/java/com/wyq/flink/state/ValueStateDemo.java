@@ -1,6 +1,5 @@
 package com.wyq.flink.state;
 
-import org.apache.commons.lang.SystemUtils;
 import org.apache.flink.api.common.RuntimeExecutionMode;
 import org.apache.flink.api.common.functions.RichMapFunction;
 import org.apache.flink.api.common.state.ValueState;
